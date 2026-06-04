@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(findstr /i \"unity mcpServers\")",
+      "Bash(claude mcp *)",
+      "Bash(echo \"=== exit $? ===\")",
+      "PowerShell($c = \\(Get-Command claude -ErrorAction SilentlyContinue\\).Source; if \\($c\\) { \"claude at: $c\" } else { \"claude not on PATH\" })",
+      "mcp__unityMCP__read_console",
+      "mcp__unityMCP__execute_code",
+      "mcp__unityMCP__manage_editor",
+      "mcp__unityMCP__refresh_unity",
+      "mcp__unityMCP__manage_camera",
+      "Bash(adb pair *)",
+      "PowerShell(& \"D:\\\\Unity\\\\Hub\\\\Unity Hub\\\\6000.3.16f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\SDK\\\\platform-tools\\\\adb.exe\" pair 172.16.0.2:35493 035684)",
+      "PowerShell($adb=\"D:\\\\Unity\\\\Hub\\\\Unity Hub\\\\6000.3.16f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\SDK\\\\platform-tools\\\\adb.exe\"; & $adb version; Test-Connection -ComputerName 172.16.0.2 -Count 2 -Quiet)",
+      "PowerShell(python --version 2>$null; python -c \"import qrcode; print\\('qrcode-ok'\\)\" 2>$null; echo \"---\"; \\(Get-Command qrencode -ErrorAction SilentlyContinue\\).Source)",
+      "PowerShell($qr = \"WIFI:T:ADB;S:debug;P:dimas123;;\"; python -c \"import qrcode; qr=qrcode.QRCode\\(\\); qr.add_data\\('$qr'\\); qr.make\\(\\); qr.print_ascii\\(\\); img=qr.make_image\\(\\); img.save\\(r'D:\\\\3dToCanvas\\\\adb_pair_qr.png'\\)\"; echo \"saved D:\\\\3dToCanvas\\\\adb_pair_qr.png\")",
+      "Bash(Get-ChildItem -Recurse -Include \"*.asmdef\")",
+      "Bash(Select-Object FullName)",
+      "Bash(grep -B 100 -A 50 \"--- !u!114 &2836004475231152069\" \"D:\\\\3dToCanvas\\\\Assets\\\\Scenes\\\\SampleScene.unity\")",
+      "WebFetch(domain:gemini.google.com)",
+      "mcp__unityMCP__find_gameobjects",
+      "WebFetch(domain:discussions.unity.com)",
+      "WebFetch(domain:docs.unity3d.com)"
+    ]
+  }
+}

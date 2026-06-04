@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "unityMCP": {
+      "type": "stdio",
+      "command": "C:\\Users\\dimas\\.local\\bin\\uvx.exe",
+      "args": [
+        "--offline",
+        "--from",
+        "mcpforunityserver==9.7.1",
+        "mcp-for-unity",
+        "--transport",
+        "stdio"
+      ]
+    }
+  }
+}
