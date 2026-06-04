@@ -1,0 +1,23 @@
+{
+  "name": "com.dimas.ui3d",
+  "version": "0.1.0",
+  "displayName": "UI3D - 3D Characters in UGUI",
+  "description": "Render skinned 3D characters directly inside a Unity uGUI Canvas using Burst-accelerated CPU skinning. Drop a UIBurstSkinnedCharacter onto a Canvas and it draws an animated, skinned mesh as a UI graphic with correct depth handling.",
+  "unity": "6000.2",
+  "keywords": [
+    "ui",
+    "ugui",
+    "skinning",
+    "burst",
+    "3d",
+    "canvas"
+  ],
+  "author": {
+    "name": "Dimas Hutama"
+  },
+  "dependencies": {
+    "com.unity.burst": "1.8.29",
+    "com.unity.mathematics": "1.3.3",
+    "com.unity.ugui": "2.0.0"
+  }
+}
